@@ -5,12 +5,14 @@ import { useState } from "react";
 import SelectedProject from "./components/SelectedProject";
 
 function App() {
+  //defining working variables using useState
   const [project, setProject] = useState({
     selectedProjectId: undefined,
     projects: [],
     tasks: [],
   });
 
+  //function, that is used to handle adding new task
   function handleAddTask(taskText) {
     setProject((prevState) => {
       const taskId = Math.random();
@@ -26,6 +28,8 @@ function App() {
       };
     });
   }
+
+  //function, that is used to delete task
   function handleDelTask(id) {
     setProject((prevProj) => {
       return {
@@ -36,6 +40,7 @@ function App() {
     });
   }
 
+  //function, that is used to delete project
   function handleDeleteProj() {
     setProject((prevProj) => {
       return {
@@ -48,6 +53,7 @@ function App() {
     });
   }
 
+  //function, that is used to delete task
   function handleSelectProj(id) {
     setProject((prevProj) => {
       return {
