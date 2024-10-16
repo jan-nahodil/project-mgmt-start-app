@@ -1,12 +1,14 @@
 import { useState } from "react";
 
 export default function NewTask({ onAdd }) {
-  const [task, setTask] = useState("");
-
+  const [task, setTask] = useState(""); //Manage the task input field value
+  
+  //Function to handle changes in the input field on every keystrike in the input field
   function handleChange(event) {
     setTask(event.target.value);
   }
 
+  //Function to handle the Add task button click
   function handleClick() {
     if (task.trim() === "") {
       return;
