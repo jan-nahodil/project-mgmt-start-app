@@ -3,17 +3,19 @@ import Inputt from "./Input";
 import Modal from "./Modal";
 
 export default function NewProj({ onAdd, onCancle }) {
+  // Component for adding a new project
   const modal = useRef();
-
   const title = useRef();
   const desc = useRef();
   const dueDate = useRef();
 
+  //Function to handle saving the project
   function handleSave() {
     const enteredTitle = title.current.value;
     const enteredDescription = desc.current.value;
     const enteredDueDate = dueDate.current.value;
 
+    //Validation of inputed values
     if (
       enteredTitle.trim() === "" ||
       enteredDescription.trim() === "" ||
@@ -22,6 +24,8 @@ export default function NewProj({ onAdd, onCancle }) {
       modal.current.open();
       return;
     }
+
+    //Call the onAdd function (that is passed from ) and pass the new project details (if all inputs are valid)
     onAdd({
       title: enteredTitle,
       description: enteredDescription,
