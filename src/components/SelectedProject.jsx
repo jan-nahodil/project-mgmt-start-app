@@ -7,12 +7,15 @@ export default function SelectedProject({
   onDelTask,
   tasks,
 }) {
+
+  //Creating const for Date, so it is readable
   const fromattedDate = new Date(project.dueDate).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
   });
 
+  //Rendering selected project
   return (
     <div className="w-[35rem] mt-16">
       <header className="pb-4 mb-4 border-b-2 border-stone-300">
