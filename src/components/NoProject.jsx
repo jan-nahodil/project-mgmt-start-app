@@ -1,5 +1,6 @@
 import noProject from "../assets/no-projects.png";
 
+//Here I define defalt screen, when users doesn't select any existing project or didn't decided to create new one
 export default function NoProject({ onAdd }) {
   return (
     <div className="mt-24 text-center w-2/3">
