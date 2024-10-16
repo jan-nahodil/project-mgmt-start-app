@@ -25,7 +25,8 @@ export default function NewProj({ onAdd, onCancle }) {
       return;
     }
 
-    //Call the onAdd function (that is passed from ) and pass the new project details (if all inputs are valid)
+    //Call the onAdd function (that is passed from App.jsx where it is defined in handleForwardingProject) 
+    //and pass the new project details (if all inputs are valid)
     onAdd({
       title: enteredTitle,
       description: enteredDescription,
