@@ -15,4 +15,3 @@ A simple task and project management application built with React. This app allo
 - **React**: Frontend framework
 - **JavaScript (ES6+)**: Core scripting language
 - **Tailwind CSS**: Utility-first CSS framework
-- **React Portals**: Used for modals
