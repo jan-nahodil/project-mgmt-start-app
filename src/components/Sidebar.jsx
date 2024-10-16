@@ -1,3 +1,4 @@
+//Sidebar component, that displays the list of projects and a button to add new projects
 export default function Sidebar({
   onAdd,
   projects,
@@ -18,6 +19,7 @@ export default function Sidebar({
         </button>
       </div>
       <ul className="mt-8">
+        {/* Map the projects array to render each project as a list item */}
         {projects.map((project) => {
           let cssClass =
             "w-full text-left px-2 py-1 rounded-sm my-1 text-stone-400 hover:text-stone-200 hover:bg-stone-800";
@@ -29,7 +31,8 @@ export default function Sidebar({
 
           return (
             <li key={project.id}>
-              <button onClick={() => onSelect(project.id)} className={cssClass}>
+              <button onClick={() => onSelect(project.id)} //Calls the onSelect function when a project is clicked
+                className={cssClass}>
                 {project.title}
               </button>
             </li>
