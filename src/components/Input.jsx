@@ -1,6 +1,8 @@
 import { forwardRef } from "react";
 
+// Input component using forwardRef to pass a ref 
 const Input = forwardRef(function Input({ isTextArea, label, ...props }, ref) {
+  // Defining a set of common CSS classes
   const classes =
     "w-full p-1 border-b-2 rounded-sm border-stone-300 text-stone-600 focus:outline-none focuse:border-stone-600";
 
