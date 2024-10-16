@@ -13,5 +13,5 @@ A simple task and project management application built with React. This app allo
 ## Technologies Used
 
 - **React**: Frontend framework
-- **JavaScript (ES6+)**: Core scripting language
+- **JavaScript**: Core scripting language
 - **Tailwind CSS**: Utility-first CSS framework
